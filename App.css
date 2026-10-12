@@ -1,0 +1,312 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f8f4;
+  color: #243b2c;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(120deg, #176b3a, #3ca66b);
+  color: white;
+  padding: 30px 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 45px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 0;
+  color: #e6f6eb;
+}
+
+.main-content {
+  width: 92%;
+  max-width: 1250px;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  flex: 1;
+  align-items: start;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d7eadc;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(28, 104, 59, 0.08);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: #f0f8f2;
+  border-bottom: 1px solid #e0eee3;
+}
+
+.heading-icon {
+  font-size: 27px;
+  background: #d9f0df;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.card-heading h2 {
+  margin: 0 0 8px;
+  color: #176b3a;
+  font-size: 22px;
+}
+
+.card-heading p {
+  margin: 0;
+  color: #728276;
+  font-size: 14px;
+}
+
+form {
+  padding: 26px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 18px 0 9px;
+  color: #275c3a;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfe2d3;
+  border-radius: 9px;
+  font-size: 15px;
+  background: white;
+  color: #243b2c;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #32965a;
+  box-shadow: 0 0 0 3px #e0f3e5;
+}
+
+button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #176b3a, #3ca66b);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #12552e;
+}
+
+.student-profile {
+  padding: 25px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2eee5;
+}
+
+.avatar {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #dff2e4;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+}
+
+.profile-header h2 {
+  margin: 0 0 10px;
+  color: #176b3a;
+  overflow-wrap: anywhere;
+}
+
+.student-badge {
+  background: #dff2e4;
+  color: #176b3a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding: 19px 0;
+  border-bottom: 1px solid #e6eee7;
+}
+
+.detail-row span {
+  color: #64766a;
+}
+
+.detail-row strong {
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.marks-box {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f0f8f2;
+}
+
+.marks-box p {
+  margin: 0 0 14px;
+  color: #176b3a;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #d5e7d9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2e9655;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+.marks-box strong {
+  color: #176b3a;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 45px 25px;
+}
+
+.empty-icon {
+  font-size: 55px;
+  margin-bottom: 12px;
+}
+
+.empty-state h3 {
+  color: #176b3a;
+}
+
+.empty-state p {
+  color: #728276;
+  line-height: 1.6;
+}
+
+.quote {
+  margin: 0 25px 25px;
+  background: #eaf6ed;
+  padding: 17px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.quote span {
+  color: #2e9655;
+  font-size: 25px;
+}
+
+.quote p {
+  color: #176b3a;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+footer {
+  background: #176b3a;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: auto;
+}
+
+footer span {
+  color: #b9edc7;
+  margin: 0 10px;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    margin: 25px auto;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 22px 5%;
+    gap: 12px;
+  }
+
+  .header h1 {
+    font-size: 19px;
+  }
+
+  .card-heading {
+    padding: 18px;
+  }
+
+  .detail-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .detail-row strong {
+    text-align: left;
+  }
+}
